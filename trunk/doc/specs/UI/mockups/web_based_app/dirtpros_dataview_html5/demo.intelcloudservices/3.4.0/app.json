@@ -1,0 +1,9 @@
+{
+  "reponame":"sample-csp-identity",
+  "caption":"CSP Identity",
+  "tooltip":"Authenticate your user with Intel Cloud Services Platform",
+  "description":"Authenticate your user with Intel Cloud Services Platform identity service.",
+  "articleurl":"http://software.intel.com/en-us/articles/using-the-intel-cloud-services-platform-identity-service-in-the-intel-xdk",
+  "categories":["csp"],
+  "visible": "true"
+}

@@ -1,0 +1,15 @@
+This sample demonstrates the use of the Intel Cloud Services Platfrom (CSP) Identity service
+to authenticate the user of your mobile application.
+
+The sample application presents a login button that when pressed requests the CSP identity service
+authenticate the user.  This authentication process requires the application contain a valid
+CSP client id and secret key. To obtain these two values, follow the instructions here:
+
+http://software.intel.com/en-us/articles/intel-cloud-services-platform-beta-getting-started
+
+Specifically, when registering your application, enable the Identity service.  For the callback URN, you may
+enter: urn:intel:identity:oauth:oob:async
+
+The application uses the following libraries: jQuery, Twitter Bootstrap and Bootbox.
+
+Unit tests are available for this application.  Click the unit tests button to run the tests.

@@ -1,0 +1,30 @@
+<?xml version   ="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.intel.software.html5.csp"
+    versioncode = "1"
+    version     = "1.0.0">
+    
+    <name>Intel CSP Identity Sample</name>
+    
+    <content src="index.html"/>
+    <icon src="icon.png" width="256" height="256" />
+    
+    <description>
+        Authenticate your user with Intel CSP Identity service. 
+    </description>
+    
+    <author href="http://software.intel.com/html5">
+        Intel Corporation
+    </author>
+        
+    <preference name="phonegap-version" value="2.4.0" />
+    <plugins>
+      <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    </plugins>
+
+    <!-- for Android -->
+    <preference name="orientation" value="default" />
+    <preference name="android-minSdkVersion" value="9" />
+</widget>
+
