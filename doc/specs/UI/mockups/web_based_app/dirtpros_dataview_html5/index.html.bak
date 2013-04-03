@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Elegant Press | Home</title>
+    <link rel="stylesheet" href="styles/elegant-press.css" type="text/css">
+    <script src="scripts/elegant-press.js" type="text/javascript"></script>
+    <!--[if IE]><style>#header h1 a:hover{font-size:75px;}</style><![endif]-->
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1><a href="index.html">DirtPros DataVIEW<br>
+          </a></h1>
+        <p id="tagline"><strong>Site: University of Miami<br>
+          </strong></p>
+      </header>
+    </div>
+    <div class="main-container">
+      <div id="sub-headline">
+        <div class="tagline_left">
+          <p id="tagline2">Date Created: 15 October 2013 | Administrator: Rob
+            Jones<a href="mailto:email@website.com"></a></p>
+        </div>
+        <div class="tagline_right">
+          <form action="#" method="post">
+            <fieldset> <legend>Site Search</legend> <input value="Search Data…"
+                onfocus="if (this.value == 'Search Our Website…') {this.value = '';}"
+                onblur="if (this.value == '') {this.value = 'Search Our Website…';}"
+                type="text"> <input name="go" id="go" value="Search" type="submit">
+            </fieldset>
+          </form>
+        </div>
+        <br class="clear">
+      </div>
+    </div>
+    <div class="main-container">
+      <div id="nav-container">
+        <nav>
+          <ul class="nav">
+            <li class="active">Main Page</li>
+            <li><a href="typo.html">Site STATS</a></li>
+            <li><a href="#">EXPORT</a>
+              <ul>
+                <li><a href="#">PDF</a>
+                  <ul style="top: 0px; left: 139px;">
+                    <li><a href="index.html">Download</a> </li>
+                  </ul>
+                </li>
+                <li><a href="index.html">HTML</a></li>
+              </ul>
+            </li>
+            <li><a href="portfolio.html">Regional</a></li>
+            <li><a href="gallery.html">Aggregate Data</a></li>
+            <li class="last"><a href="contact.php">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="container1">
+        <div id="mySlides">
+          <div id="slide1"> <img style="width: 962px; height: 390px;" src="images/chart_01_average_distribution.jpg"
+              alt="Slide 1 jFlow Plus"> <span><b class="slideheading">Average
+                Distribution</b><br>
+              This view shows the 9-month long average percentage material
+              distribution.<a href="#" title="Coolness" class="readmore">Enlarge</a></span>
+          </div>
+          <div id="slide2"> <img style="width: 961px; height: 368px;" src="images/chart_02_weight_distribution.jpg"
+              alt="Slide 2 jFlow Plus"> <span><b class="slideheading">Weight
+                Distribution</b><br>
+              This view shows the 9-month long average weight distribution<a href="#"
+                title="Coolness" class="readmore"> Enlarge</a></span> </div>
+          <div id="slide3"> <img style="width: 960px; height: 426px;" src="images/chart_03_behavior_analysis.jpg"
+              alt="Slide 3 jFlow Plus"> <span><b class="slideheading">Behavior
+                Analysis</b><br>
+              This view shows the distribution behavior over 9-months<a href="#"
+                title="Coolness" class="readmore">Enlarge</a></span> </div>
+        </div>
+        <div id="myController"> <span class="jFlowControl"></span> <span class="jFlowControl"></span>
+          <span class="jFlowControl"></span> </div>
+        <section class="jFlowPrev">
+          <div></div>
+        </section>
+        <section class="jFlowNext">
+          <div></div>
+        </section>
+        <br>
+        <br>
+        <article class="box" id="home_featured21">
+          <div class="block">
+            <h2>Site Information</h2>
+            <p>Site: University of Miami</p>
+            <p>Priority: Normal</p>
+            <p>Contracted: 17 July 2002</p>
+          </div>
+          <div class="block">
+            <h2>Report Information</h2>
+            <p>Begin: 1 January 2013</p>
+            <p>End: 1 October 2013</p>
+            <p>Type: Aggregated</p>
+          </div>
+          <div class="block last">
+            <h2>Site Policies</h2>
+            <p>This location has requested specific information regarding the
+              percentage of wet trash on average.<br>
+            </p>
+          </div>
+          <div class="clear"></div>
+        </article>
+      </div>
+      <br>
+      <br>
+      <div class="container2">
+        <article id="home_featured2">
+          <ul>
+            <li>
+              <div class="imgholder"><a href="images/slide1.jpg" data-gal="prettyPhoto[featured]"
+                  title="First Featured Title"><img src="images/view_collection_logs.jpg"
+                    alt="view logs" width="275" height="145"></a></div>
+              <h4 style="text-align: center;">View Collection Logs</h4>
+            </li>
+            <li>
+              <div class="imgholder"><a href="images/slide2.jpg" data-gal="prettyPhoto[featured]"
+                  title="Second Featured Title"><img src="images/featured2.jpg"
+                    alt="" width="275" height="145"></a></div>
+              <h4 style="text-align: center;">&nbsp; Edit Information</h4>
+            </li>
+            <li class="last">
+              <div class="imgholder"><a href="images/slide3.jpg" data-gal="prettyPhoto[featured]"
+                  title="Third Featured Title"><img src="images/featured3.jpg" alt=""
+                    width="275" height="145"></a></div>
+              <h4 style="text-align: center;">Record Administrative Request</h4>
+            </li>
+          </ul>
+          <br class="clear">
+        </article>
+      </div>
+    </div>
+    <div class="main-container"> </div>
+    <div class="callout">
+      <div class="calloutcontainer">
+        <div class="container_12">
+          <div class="grid">
+            <article class="footbox">
+              <h2>Resources</h2>
+              <ul>
+                <li><a href="#">Account Home Page</a></li>
+                <li>Report generator</li>
+                <li>DirtPros DataView Options</li>
+                <li>Help</li>
+              </ul>
+            </article>
+            <article class="footbox last">
+              <h2>Regional Extensions</h2>
+              <div id="social"> <br>
+                View Regional Employee Information<br>
+                <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+            </article>
+            <article class="latestgallery">
+              <h2>Related Sites</h2>
+              <ul>
+                <li><a href="images/thumb.jpg" data-gal="prettyPhoto[gallery]" title="Title"><img
+                      src="images/thumb.jpg" alt="" width="150" height="95"></a></li>
+                <li><a href="images/thumb2.jpg" data-gal="prettyPhoto[gallery]"
+                    title="Title"><img src="images/thumb2.jpg" alt="" width="150"
+                      height="95"></a></li>
+                <li><a href="images/thumb3.jpg" data-gal="prettyPhoto[gallery]"
+                    title="Title"><img src="images/thumb3.jpg" alt="" width="150"
+                      height="95"></a></li>
+                <li><a href="images/thumb4.jpg" data-gal="prettyPhoto[gallery]"
+                    title="Title"><img src="images/thumb4.jpg" alt="" width="150"
+                      height="95"></a></li>
+              </ul>
+            </article>
+            <div class="clear"></div>
+          </div>
+          <div class="calloutoverlay"></div>
+          <div class="calloutoverlaybottom"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="tagline_left">Copyright © 2011 - All Rights Reserved - <a href="#">AAAC</a></p>
+      <p class="tagline_right"><a href="http://www.priteshgupta.com/" title="Pritesh Gupta"
+          target="_blank"><br>
+        </a></p>
+    </footer>
+    <br>
+    <!-- Free template distributed by http://freehtml5templates.com -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+/*
+ * Copyright (c) 2013, Intel Corporation. All rights reserved.
+ * File revision: 4 March 2013
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+ 
+/* 
+ * Make the footer sticky to the bottom of the page.  Adapted from:
+ * http://twitter.github.com/bootstrap/examples/sticky-footer-navbar.html
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+
+#wrap > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 979px) {
+  #wrap > .container {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
