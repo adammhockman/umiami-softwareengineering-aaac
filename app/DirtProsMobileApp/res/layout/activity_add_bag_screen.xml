@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/bag_weight_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/bag_weight_hint"
+        android:inputType="number">
+    </EditText>
+    
+    <Button android:id="@+id/record_weight_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:onClick="myClickHandler"
+        android:text="@string/record_weight_text"
+         android:textSize="@dimen/small_text_size">     
+    </Button>
+    
+    <EditText android:id="@+id/wet_trash_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/wet_trash_hint"
+        android:inputType="number"
+        android:visibility="gone">
+    </EditText>
+    
+    <EditText android:id="@+id/paper_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/paper_hint"
+        android:inputType="number"
+        android:visibility="gone">
+    </EditText>     
+        
+    <EditText android:id="@+id/cardboard_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/cardboard_hint"
+        android:inputType="number"
+        android:visibility="gone">
+    </EditText>
+
+    <EditText android:id="@+id/plastic_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/plastic_hint"
+        android:inputType="number"
+        android:visibility="gone">
+    </EditText>
+    
+    <EditText android:id="@+id/glass_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/glass_hint"
+        android:inputType="number"
+        android:visibility="gone">
+    </EditText>
+    
+    <EditText android:id="@+id/cans_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/cans_hint"
+        android:inputType="number"
+        android:visibility="gone">
+    </EditText>
+    
+
+    <Button android:id="@+id/record_bag_composition_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:onClick="myClickHandler"
+        android:text="@string/record_bag_composition_text"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone">     
+    </Button>
+</LinearLayout>
