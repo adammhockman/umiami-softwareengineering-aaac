@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dirt Pros Mobile App</string>
+    
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="region_hint">Region</string>
+    <string name="facility_hint">Facility Type</string>
+    <string name="partner_hint">Solid Waste Removal Partner</string>
+    <string name="bag_weight_hint">Bag Weight in Lbs</string>
+    <string name="wet_trash_hint">Wet Trash %</string>
+    <string name="paper_hint">Paper %</string>
+    <string name="cardboard_hint">Cardboard %</string>
+    <string name="plastic_hint">Plastic %</string>
+    <string name="cans_hint">Cans %</string>
+    <string name="glass_hint">Glass %</string>
+    
+    <string name="login_text">Log In</string>
+    <string name="exit_text">Exit</string>
+    <string name="add_bag_text">Add Bag</string>
+    <string name="submit_data_text">Submit Data for Approval</string>
+    <string name="record_collection_information_text">Record Collection Information</string>
+    <string name="logout_text">Logout</string>
+    <string name="record_weight_text">Record Weight</string>
+    <string name="record_bag_composition_text">Record Bag Composition</string>
+    
+    <dimen name="text_size">30sp</dimen>
+    <dimen name="small_text_size">20sp</dimen>
+    <dimen name="button_size">80dp</dimen>
+    
+    <integer name="half_weight">50</integer>
+</resources>

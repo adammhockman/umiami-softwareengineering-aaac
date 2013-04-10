@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   
+    
+        
+    <Button android:id="@+id/record_collection_information_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:onClick="myClickHandler"
+        android:text="@string/record_collection_information_text"
+        android:textSize="@dimen/small_text_size">     
+    </Button>
+        
+    <Button android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size"
+            android:onClick="myClickHandler"
+            android:text="@string/logout_text"
+            android:textSize="@dimen/small_text_size">     
+    </Button>
+           
+    
+</LinearLayout>

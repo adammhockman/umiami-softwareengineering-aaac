@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/region_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/region_hint">
+    </EditText>
+        
+    <EditText android:id="@+id/facility_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/facility_hint">
+    </EditText>
+    
+    <EditText android:id="@+id/partner_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:hint="@string/partner_hint">
+    </EditText>
+    
+        
+    <Button android:id="@+id/add_bag_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:onClick="myClickHandler"
+        android:text="@string/add_bag_text"
+        android:textSize="@dimen/small_text_size">     
+    </Button>
+        
+    <Button android:id="@+id/submit_data_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:onClick="myClickHandler"
+        android:text="@string/submit_data_text"
+        android:textSize="@dimen/small_text_size">     
+    </Button>
+        
+    
+    
+</LinearLayout>
