@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_vertical"
     tools:context=".LoginScreen" >
 
     <EditText android:id="@+id/username_field"
@@ -23,7 +24,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         
         <Button android:id="@+id/login_button"
             android:layout_width="0dp"
