@@ -30,11 +30,10 @@ public class VerifyUserServlet extends HttpServlet
 		
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
-		
 		// Verify the Username and Password
 	    DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 		Filter filter = new FilterPredicate("username", FilterOperator.EQUAL, username);
-		Query q = new Query("Emloyee").setFilter(filter);
+		Query q = new Query("Employee").setFilter(filter);
 		PreparedQuery pq = datastore.prepare(q);
 		FetchOptions fetchOptions = FetchOptions.Builder.withLimit(1);
 		QueryResultList<Entity> results = pq.asQueryResultList(fetchOptions);
