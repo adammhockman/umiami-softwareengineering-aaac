@@ -2,47 +2,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_vertical">
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
 
-    <EditText android:id="@+id/region_field"
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/collection_log_title"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/region_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/small_text_size"
-        android:hint="@string/region_hint">
+        android:hint="@string/region_hint"
+        android:textSize="@dimen/small_text_size" >
     </EditText>
-        
-    <EditText android:id="@+id/facility_field"
+
+    <EditText
+        android:id="@+id/facility_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/small_text_size"
-        android:hint="@string/facility_hint">
+        android:hint="@string/facility_hint"
+        android:textSize="@dimen/small_text_size" >
     </EditText>
-    
-    <EditText android:id="@+id/partner_field"
+
+    <EditText
+        android:id="@+id/partner_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/small_text_size"
-        android:hint="@string/partner_hint">
+        android:hint="@string/partner_hint"
+        android:textSize="@dimen/small_text_size" >
     </EditText>
-    
-        
-    <Button android:id="@+id/add_bag_button"
+
+    <Button
+        android:id="@+id/add_bag_button"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/button_size"
+        android:layout_height="60dp"
         android:onClick="myClickHandler"
         android:text="@string/add_bag_text"
-        android:textSize="@dimen/small_text_size">     
+        android:textSize="@dimen/small_text_size" >
     </Button>
-        
-    <Button android:id="@+id/submit_data_button"
+
+    <Button
+        android:id="@+id/submit_data_button"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/button_size"
+        android:layout_height="60dp"
         android:onClick="myClickHandler"
         android:text="@string/submit_data_text"
-        android:textSize="@dimen/small_text_size">     
+        android:textSize="@dimen/small_text_size" >
     </Button>
-        
-    
-    
+
 </LinearLayout>
