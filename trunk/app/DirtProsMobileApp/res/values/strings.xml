@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Dirt Pros Mobile App</string>
-    
+    <string name= "logo_description">Logo Description</string>
+    <string name = "bag_title">New Bag</string>
+    <string name = "collection_log_title">New Collection Log</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="region_hint">Region</string>
