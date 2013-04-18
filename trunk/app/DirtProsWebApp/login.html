@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+<link href="assets/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<title>Login</title>
+</head>
+<body>
+<div id="wrapper" style="width:100%; text-align:center">
+<img id="logo" src="assets/img/logo.jpg" alt="Logo" width = "300" height = "200" align="middle">
+<h3 id = "title">Data Collection and Management System</h3>
+</div>
+
+<div id="box">
+  <form name="formname" method="post">
+    <table>
+        <tr>
+          <td align="right"><label id="text">Username:</label></td>
+          <td align="left"><input type="text" id="tbox" name="j_username" placeholder="Username"></td>
+        </tr>
+        <tr>
+          <td align="right"><label id="text">Password:</label></td>
+          <td align="left"><input type="password" id="tbox" name="j_password" placeholder="Password"></td>
+        </tr>
+        <tr>
+          <td align="right"><button type="button" class="btn btn-success" onclick = "check()">Log In</button></td>
+          <!--<td align="left"><input type="reset" value="Reset"></></td>-->
+          <td align="left"><button type="reset" class="btn btn-success">Reset</button></td>
+        </tr>
+    </table>
+  </form>
+</div>
+ 
+<div id="myDiv"></div>
+
+<script language="javascript">
+/*function check()
+{
+  alert("Check");
+  var username = document.forms["formname"]["j_username"].value;
+  var password = document.forms["formname"]["j_password"].value;
+alert("Check");
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function()
+  {
+      alert("Line 49 "+xmlhttp.readyState);
+      if (xmlhttp.readyState==4)
+        {
+             alert(xmlhttp.readyState);
+             var jsonObj = JSON.parse(xmlhttp.responseText);
+             alert(xmlhttp.responseText);
+             alert(jsonObj.Verified);
+        }
+  }
+  alert("Check");
+  //alert("http://dirtprosdatabase.appspot.com/login?username="+username+"&password=" +password+"&t="+Math.random());
+  xmlhttp.open("GET", "http://dirtprosdatabase.appspot.com/login?username="+username+"&password=" +password+"&t="+Math.random(), true);
+  xmlhttp.send(null);
+ 
+}*/
+
+function check()
+{
+  var username = document.forms["formname"]["j_username"].value;
+  var password = document.forms["formname"]["j_password"].value;
+
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==4)
+    {
+       jsonObj = JSON.parse(xmlhttp.responseText);
+       alert(jsonObj.Verified);
+    }
+  }
+  xmlhttp.open("GET", "http://dirtprosdatabase.appspot.com/login?username="+username+"&password=" +password+"&t="+Math.random(), true);
+  xmlhttp.send(null);
+ 
+}
+</script>
+
+</body>
+</html>

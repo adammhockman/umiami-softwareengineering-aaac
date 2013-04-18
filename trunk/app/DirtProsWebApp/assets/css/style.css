@@ -1,0 +1,115 @@
+body
+{
+background-repeat:no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-color: #ffffff;
+}
+
+label {
+
+}
+
+/*input[type="text"] {
+border: 2px solid #32829D;
+background: #ffffff;
+color: #8AC34E;
+}
+
+input[type="password"] {
+border: 2px solid #32829D;
+background: #ffffff;
+color:#32829D;
+}
+
+input[type="submit"] {
+border: 2px solid #33CC33;
+background: transparent;
+color: #8AC34E;
+}
+
+input[type="submit"]:hover {
+border: thin #999999 outset;
+filter:alpha(opacity=50);-moz-opacity:.5;opacity:.5;
+background: #FFFFFF;
+color: #000000;
+}
+input[type="submit"]:focus  {
+border: thin #000000 solid;
+background: #FFFFFF;
+color: #000000;
+}
+input[type="submit"]:focus:hover {
+border: thin #000000 solid;
+filter:alpha(opacity=100);-moz-opacity:1;opacity:1;
+background: #FFFFFF;
+color: #000000;
+}
+input[type="reset"] {
+border: 2px solid #33CC33;
+background: transparent;
+color: #8AC34E;
+}
+input[type="reset"]:hover {
+border: thin #999999 outset;
+filter:alpha(opacity=50);-moz-opacity:.5;opacity:.5;
+background: #FFFFFF;
+color: #000000;
+}
+input[type="reset"]:focus  {
+border: thin #000000 solid;
+background: #FFFFFF;
+color: #000000;
+}
+input[type="reset"]:focus:hover {
+border: thin #000000 solid;
+filter:alpha(opacity=100);-moz-opacity:1;opacity:1;
+background: #FFFFFF;
+color: #000000;
+}*/
+
+#logo{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 38%;
+	top: 8%;
+}
+
+#title{
+	position: absolute;
+	width: 500px;
+	height: 50px;
+	left: 30%;
+	top: 40%;
+	color: #8AC34E;
+}
+
+#box
+{
+position: absolute;
+width: 50%;
+height: 30%;
+left: 38%;
+top: 50%;
+}
+
+#box_error
+{
+position: absolute;
+width: 50%;
+height: 30%;
+left: 39%;
+top: 65%;
+}
+
+#text
+{
+font-family:arial;
+color: inherit;
+font-size:16px;
+}
+
+#tbox{
+	font-size: 16px;
+}
