@@ -39,11 +39,15 @@ public class GetLogsServlet extends HttpServlet
 		  for(Entity collectionLog : results)
 		  {
 			  long logID = collectionLog.getKey().getId();
+			  String site = (String) collectionLog.getProperty("site");
 			  String region = (String) collectionLog.getProperty("region");
 			  String facilityType = (String) collectionLog.getProperty("facility");
 			  String wastePartner = (String)collectionLog.getProperty("partner");
+			  String date = (String)collectionLog.getProperty("date");
 			  
 			  JSONObject collectionLogJSON = new JSONObject();
+			  collectionLogJSON.put("site", site);
+			  collectionLogJSON.put("date", date);
 			  collectionLogJSON.put("logID", logID);
 			  collectionLogJSON.put("region", region);
 			  collectionLogJSON.put("facility", facilityType);
