@@ -19,6 +19,13 @@
         android:typeface="sans" />
 
     <EditText
+        android:id="@+id/collectionSite_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/site_hint"
+        android:textSize="@dimen/small_text_size" >
+    </EditText>
+    <EditText
         android:id="@+id/region_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

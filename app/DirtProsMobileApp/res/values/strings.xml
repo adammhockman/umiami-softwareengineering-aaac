@@ -17,6 +17,7 @@
     <string name="plastic_hint">Plastic %</string>
     <string name="cans_hint">Cans %</string>
     <string name="glass_hint">Glass %</string>
+    <string name="site_hint">Collection Site</string>
     
     <string name="login_text">Log In</string>
     <string name="exit_text">Exit</string>
