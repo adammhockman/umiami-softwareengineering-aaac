@@ -2,6 +2,10 @@ package edu.miami.csc531;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -33,14 +37,21 @@ public class CreateCollectionLogServlet extends HttpServlet
 		 String region = jsonObject.getString("region");
 		 String facilityType = jsonObject.getString("facility");
 		 String wastePartner = jsonObject.getString("partner");
-		 JSONArray bags = jsonObject.getJSONArray("bags");
+		 String collectionSite = jsonObject.getString("site");
+		 
+		 SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");      
+		 String date = sdf.format(Calendar.getInstance().getTime());
+		  
+		  JSONArray bags = jsonObject.getJSONArray("bags");
 		 
 		  DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 		  Entity collectionLog = new Entity("CollectionLog");
+		  collectionLog.setProperty("site", collectionSite);
 		  collectionLog.setProperty("username", username);
 		  collectionLog.setProperty("region", region);
 		  collectionLog.setProperty("facility", facilityType);
 		  collectionLog.setProperty("partner", wastePartner);
+		  collectionLog.setProperty("date", date);
 		  
 		  datastore.put(collectionLog);
 		  
