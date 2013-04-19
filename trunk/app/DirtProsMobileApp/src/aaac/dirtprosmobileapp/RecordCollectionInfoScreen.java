@@ -121,6 +121,7 @@ new DialogInterface.OnClickListener() {
             
             switch (whatWasClicked) {
             case DialogInterface.BUTTON_POSITIVE:
+            	String site = ((EditText)findViewById(R.id.collectionSite_field)).getText().toString();
             	String region = ((EditText)findViewById(R.id.region_field)).getText().toString();
             	String facilityType = ((EditText)findViewById(R.id.facility_field)).getText().toString();
             	String wasteRemovalPartner = ((EditText)findViewById(R.id.partner_field)).getText().toString();
@@ -128,6 +129,7 @@ new DialogInterface.OnClickListener() {
          		JSONObject collectionLog  = new JSONObject();
        		 	try
        		 	{
+       		 		collectionLog.put("site", site);
 					collectionLog.put("username",username);
 	       		 	collectionLog.put("region",region);
 	       		 	collectionLog.put("facility", facilityType);
