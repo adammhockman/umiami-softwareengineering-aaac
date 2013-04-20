@@ -37,30 +37,6 @@
 <div id="myDiv"></div>
 
 <script language="javascript">
-/*function check()
-{
-  alert("Check");
-  var username = document.forms["formname"]["j_username"].value;
-  var password = document.forms["formname"]["j_password"].value;
-alert("Check");
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function()
-  {
-      alert("Line 49 "+xmlhttp.readyState);
-      if (xmlhttp.readyState==4)
-        {
-             alert(xmlhttp.readyState);
-             var jsonObj = JSON.parse(xmlhttp.responseText);
-             alert(xmlhttp.responseText);
-             alert(jsonObj.Verified);
-        }
-  }
-  alert("Check");
-  //alert("http://dirtprosdatabase.appspot.com/login?username="+username+"&password=" +password+"&t="+Math.random());
-  xmlhttp.open("GET", "http://dirtprosdatabase.appspot.com/login?username="+username+"&password=" +password+"&t="+Math.random(), true);
-  xmlhttp.send(null);
- 
-}*/
 
 function check()
 {
@@ -74,6 +50,9 @@ function check()
     {
        jsonObj = JSON.parse(xmlhttp.responseText);
        alert(jsonObj.Verified);
+	   if(jsonObj.Verified){
+	       window.location="index.html";
+	   }
     }
   }
   xmlhttp.open("GET", "http://dirtprosdatabase.appspot.com/login?username="+username+"&password=" +password+"&t="+Math.random(), true);
