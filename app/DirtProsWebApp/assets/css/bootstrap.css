@@ -772,9 +772,9 @@ input[type="file"], input[type="image"], input[type="submit"], input[type="reset
 	width: auto;
 }
 
-#Logo {
-	height : 270 ;
-	width : 180 ;
+#LogoSmall {
+	height : 130px;
+	width : 195px;
 }
 
 select, input[type="file"] {
