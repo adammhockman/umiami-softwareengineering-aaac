@@ -583,12 +583,12 @@ dd {
 .dl-horizontal dd {
 	margin-left: 180px;
 }
-hr {
+/*hr {
 	margin: 20px 0;
-	border: 0;
-	border-top: 1px solid #eeeeee;
+	border: 2;
+	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #ffffff;
-}
+}*/
 abbr[title] {
 	cursor: help;
 	border-bottom: 1px dotted #999999;

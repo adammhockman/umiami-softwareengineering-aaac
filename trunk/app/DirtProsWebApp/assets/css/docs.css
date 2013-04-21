@@ -14,10 +14,10 @@ body {
 	background: url(../img/bg_body-noise.png);
 }
 /* Code in headings */
-h3 code {
+/*h3 code {
 	font-size: 14px;
 	font-weight: normal;
-}
+}*/
 
 ::selection, ::-moz-selection {
 background: #2d2d2d;
@@ -706,6 +706,12 @@ hr.soften2 {
 	font-weight: 200;
 	margin-bottom: 20px;
 }
+
+.marketing h3 {
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
 .marketing p {
 	font-size: 16px;
 	line-height: 1.5;
