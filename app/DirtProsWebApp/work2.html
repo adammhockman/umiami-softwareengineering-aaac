@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Outstanding Logs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+<link href="assets/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="http://www.dirtpros.com/images/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" onload="getRows()">
+<!-- Navbar
+    ================================================== -->
+<div class="nav-agency">
+  <div class="navbar navbar-static-top"> 
+    <!-- navbar-fixed-top -->
+    <div class="navbar-inner">
+      <div class="container"> 
+        <a class="brand" href="index.html"> 
+          <img id="LogoSmall" src="assets/img/logo.jpg" alt="Logo">
+        </a>
+        <!--<div id="main-nav">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a> </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:"> Work <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="work.html">One Column</a></li>
+                  <li><a href="work-two-columns.html">Two Column</a></li>
+                  <li><a href="work-three-columns.html">Three Column</a></li>
+                  <li><a href="work-details.html">Work Details</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:"> Pricing <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="pricing.html">Four Column</a></li>
+                  <li><a href="pricing-three-columns.html">Three Column</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="javascript:" class="dropdown-toggle" data-toggle="dropdown"> Pages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="components.html">Components</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:"> Blog <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="blog.html">Blog Page</a></li>
+                  <li><a href="blog-single.html">Single Page</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html">Purchase</a> </li>
+            </ul>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="marketing">
+    <!--<p>&nbsp</p>
+    <p>&nbsp</p>-->
+
+    <h2>Collection Log</h2>
+    <hr noshade>
+    &nbsp;&nbsp;&nbsp;
+    <!--<div class="row-fluid">
+      <div class="span4"> <a href="index.html"><img src="assets/img/responsive.png" alt="Responsive"></a>
+        <h2> <span class="firstword">View Outstanding Logs</span></h2>
+      </div>
+      <div class="span4"><a href="index.html"><img src="assets/img/core-values.png" alt="Think Creative"></a>
+        <h2> <span class="firstword"></span>View Approved Log Statistics</h2>
+      </div>
+      <div class="span4"><a href="index.html"><img src="assets/img/think-creative.png" alt="Core Values"></a>
+        <h2> <span class="firstword">Logout</span></h2>
+      </div>
+    </div>-->
+
+    <div class="btn-toolbar" style="margin: 0;" align="left">
+    <div class="btn-group">
+    <button class="btn dropdown-toggle btn-large" data-toggle="dropdown">Sort By  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Date</a></li>
+      <li><a href="#">Collector</a></li>
+      <li><a href="#">Facility</a></li>
+      <li><a href="#">Facility Type</a></li>
+      <li><a href="#">Region</a></li>
+      <li><a href="#">SW Removal Partner</a></li>
+      <!--<li class="divider"></li>
+      <li><a href="#">Separated link</a></li>-->
+    </ul>
+    </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+
+    <table id ="logsTable"class="table table-bordered table-hover" border="1">
+    <tr>
+    <th align="center">Collection Site</th>
+    <th align="center">Date</th>
+    <th align="center">Collector</th>
+    <th align="center">Region</th>
+    <th align="center">Option</th>
+    </tr>
+    </table>
+
+    <!-- <div class="row-fluid textleft">
+      <div class="span8">
+        <h2> <span class="firstword">Our</span> Services</h2>
+        <p> We've been doing this for a long time and the knowledge we gather from our years
+          of experience helps us to understand how the mobile channel can help our clients
+          in their challenges. We help brands by creating and developing compelling and strategic
+          solutions that are not depended on channels or platforms, but instead creating a
+          link between human needs and brands.</p>
+        <p> A few other benefits to this template include a price table element and the ability
+          to modify button backgrounds using CSS3. </p>
+        <div class="row-fluid bordertop">
+          <p> With this templates, comes the following awesomenesses :)</p>
+          <div class="span4">
+            <ul class="services">
+              <li><i class="icon-user"></i> Built for and by nerds</li>
+              <li><i class="icon-th"></i> 12-column grid</li>
+              <li><i class="icon-globe"></i> Bad-ass support</li>
+              <li><i class="icon-book"></i> Growing library</li>
+            </ul>
+          </div>
+          <div class="span4">
+            <ul class="services">
+              <li><i class="icon-resize-small"></i> Responsive design</li>
+              <li><i class="icon-eye-open"></i> Cross-everything</li>
+              <li><i class="icon-list-alt"></i> Documentation</li>
+              <li><i class="icon-cog"></i> jQuery plugins</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <h2> <span class="firstword">Agency</span> Perks</h2>
+        <div class="benefit first clearfix"> <span class="icon flexible-hours"></span><span class="benefit_text">
+          <div class="perks-title"> Flexible Hours</div>
+          <p> Come late at work or take free time if you want, we focus on results.</p>
+          </span> </div>
+        <div class="benefit clearfix"> <span class="icon coffee-day"></span><span class="benefit_text">
+          <div class="perks-title"> Surprise Treats</div>
+          <p> Every week we have one day that is dedicated to surprise treat.</p>
+          </span> </div>
+        <div class="benefit clearfix"> <span class="icon personal-projects"></span><span class="benefit_text">
+          <div class="perks-title"> Personal Projects</div>
+          <p> We support you... to build your very own projects.</p>
+          </span> </div>
+      </div>
+    </div>
+  -->
+  </div>
+</div>
+<!-- Footer
+    ================================================== -->
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <blockquote>
+          <p class="testimonial">Working with Agency has been a refreshing experience. They listened to our needs and came up with a great solution.</p>
+          <p class="name">Sarfraz Shoukat, <b>Owner - Greepit.com</b></p>
+        </blockquote>
+      </div>
+    </div>
+    <hr class="soften1">
+    <div class="row-fluid">
+      <div class="span3">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Elements</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="span3 MT70">
+        <h4>Useful Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">eGrappler.com</a></li>
+          <li><a href="#">Greepit.com</a></li>
+          <li><a href="#">WordPress.com</a></li>
+          <li><a href="#">ThemeForest.net</a></li>
+          <li><a href="#">Free Vector Icons</a></li>
+        </ul>
+      </div>
+      <div class="span3 MT70">
+        <h4>Something from Flickr</h4>
+        <div id="flickr-wrapper"> 
+          <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=10133335@N08"></script> 
+        </div>
+      </div>
+      <div class="span3 MT70">
+        <h4>Who We Are</h4>
+        <p>We are a creative production studio specialising in all things digital. Find us, connect & collaborate.</p>
+        <ul class="footer_social clearfix">
+          <li><a href="#" class="footer_facebook">Facebook</a></li>
+          <li><a href="#" class="footer_twitter">Twitter</a></li>
+          <li><a href="#" class="footer_googleplus">Google+</a></li>
+          <li><a href="#" class="footer_rss">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="soften1 copyhr">
+    <div class="row-fluid copyright">
+      <div class="span12">Copyright &copy; 2012. Greepit.com</div>
+    </div>
+  </div>
+</footer>
+-->
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+<script src="assets/js/jquery.js" type="text/javascript"></script> 
+<script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-transition.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-alert.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-modal.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-dropdown.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-scrollspy.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-tab.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-popover.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-button.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-collapse.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-carousel.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-typeahead.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-affix.js" type="text/javascript"></script> 
+<script src="assets/js/application.js" type="text/javascript"></script> 
+<script src="assets/js/jquery.isotope.min.js" type="text/javascript"></script> 
+<script src="assets/js/jquery.prettyPhoto.js" type="text/javascript"></script> 
+<script src="assets/js/superfish.js" type="text/javascript"></script> 
+<script src="assets/js/custom.js" type="text/javascript"></script>
+<script language="javascript">
+ function getRows()
+ {
+   var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==4)
+    {
+       jsonObj = JSON.parse(xmlhttp.responseText);
+	   var table = document.getElementById("logsTable");
+	   for (var i = 0; i<jsonObj.Logs.length; i++)
+	   {
+	       var row = table.insertRow(i+1);
+		   row.className = "success";
+		   var collectionSite = row.insertCell(0);
+		   collectionSite.innerHTML = jsonObj.Logs[i].site;
+		   var collectionDate = row.insertCell(1);
+		   collectionDate.innerHTML = jsonObj.Logs[i].date;
+		   var collector = row.insertCell(2);
+		   collector.innerHTML = "AAAC";
+		   var region = row.insertCell(3);
+		   region.innerHTML = jsonObj.Logs[i].region;
+		   var buttonRow = row.insertCell(4);
+		   var button = document.createElement("button");
+		   button.type = "button";
+		   button.className = "btn btn-success";
+		   button.innerHTML = "View";
+		   buttonRow.appendChild(button);
+	   }
+    }
+  }
+  xmlhttp.open("GET", "http://dirtprosdatabase.appspot.com/showlogs?username=aaac"+"&t="+Math.random());
+  xmlhttp.send(null);
+ 
+ }
+ </script>
+</body>
+</html>
