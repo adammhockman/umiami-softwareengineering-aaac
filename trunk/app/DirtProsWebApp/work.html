@@ -127,9 +127,9 @@
 		   var buttonRow = row.insertCell(4);
 		   var button = document.createElement("button");
 		   button.type = "button";
-		   button.className = "btn btn-success";
-		   button.innerHTML = "View";
-		   button.onClick = "nextpage("+i+")";
+		   button.className = "btn btn-success btn-block";
+		   button.innerHTML = "<i class='icon-eye-open icon-white'></i>&nbsp&nbsp;View";
+		   button.onClick = "window.location.href='work2.html'";
 		   buttonRow.appendChild(button);
 		   
 	   }
@@ -140,8 +140,8 @@
  
  }
  
-function nextpage(a){
-	window.location.href = "work2.html?num="+a+"";
+function nextpage(){
+	window.location.href = "work2.html?num="+0+"";
 }
  </script>
 </body>

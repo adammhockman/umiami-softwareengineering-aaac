@@ -19,19 +19,30 @@
   <form name="formname" method="post">
     <table>
         <tr>
-          <td align="right"><label id="text">Username:</label></td>
-          <td align="left"><input type="text" id="tbox" name="j_username" placeholder="Username"></td>
+          <td align="right"><label id="text">Username: </label></td>
+          <td align="left">
+			  <div class="input-prepend">
+				<span class="add-on"><i class="icon-user"></i></span>
+				<input type="text" id="tbox" name="j_username" placeholder="Username">
+			  </div>
+		  </td>
         </tr>
         <tr>
-          <td align="right"><label id="text">Password:</label></td>
-          <td align="left"><input type="password" id="tbox" name="j_password" placeholder="Password"></td>
+          <td align="right"><label id="text">Password: </label></td>
+			<td align="left">
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-pencil"></i></span>
+					<input type="password" id="tbox" name="j_password" placeholder="Password">
+				</div>
+			</td>
         </tr>
-        <tr>
+        <!--<tr>
           <td align="right"><button type="button" class="btn btn-success" onclick = "check()">Log In</button></td>
-          <!--<td align="left"><input type="reset" value="Reset"></></td>-->
           <td align="left"><button type="reset" class="btn btn-success">Reset</button></td>
-        </tr>
+        </tr>-->
     </table>
+		<button type="button" class="btn btn-success" onclick = "check()">&nbsp;Log In&nbsp;</button>
+        <button type="reset" class="btn btn-success">&nbsp;Reset&nbsp;</button>
   </form>
 </div>
  
