@@ -113,40 +113,42 @@
     {
        jsonObj = JSON.parse(xmlhttp.responseText);
 	   var table = document.getElementById("logsTable");
-	   //var num = processNum();
+	   //alert("Here");
+	   var num = processNum();
+	   //alert("num = "+num);
 	   
 	   var site = document.getElementById("csite");
-	   site.innerHTML += jsonObj.Logs[0].site;
+	   site.innerHTML += jsonObj.Logs[num].site;
 	   
 	   var date = document.getElementById("cdate");
-	   date.innerHTML += jsonObj.Logs[0].date;
+	   date.innerHTML += jsonObj.Logs[num].date;
 	   
 	   var collector = document.getElementById("collector");
 	   collector.innerHTML += "AAAC";
 	   
 	   var region = document.getElementById("cregion");
-	   region.innerHTML += jsonObj.Logs[0].region;
+	   region.innerHTML += jsonObj.Logs[num].region;
 	   
-	   for (var i = 0; i<jsonObj.Logs[0].Bags.length; i++)
+	   for (var i = 0; i<jsonObj.Logs[num].Bags.length; i++)
 	   {
 	       var row = table.insertRow(i+1);
 		   row.className = "success";
 		   var BagID = row.insertCell(0);
-		   BagID.innerHTML = jsonObj.Logs[0].Bags[i].bagID;
+		   BagID.innerHTML = jsonObj.Logs[num].Bags[i].bagID;
 		   var weight = row.insertCell(1);
-		   weight.innerHTML = jsonObj.Logs[0].Bags[i].weight+" lbs";
+		   weight.innerHTML = jsonObj.Logs[num].Bags[i].weight+" lbs";
 		   var wetTrash = row.insertCell(2);
-		   wetTrash.innerHTML = jsonObj.Logs[0].Bags[i].wetTrashPercentage+"%";
+		   wetTrash.innerHTML = jsonObj.Logs[num].Bags[i].wetTrashPercentage+"%";
 		   var paper = row.insertCell(3);
-		   paper.innerHTML = jsonObj.Logs[0].Bags[i].paperTrashPercentage+"%";
+		   paper.innerHTML = jsonObj.Logs[num].Bags[i].paperTrashPercentage+"%";
 		   var cardboard = row.insertCell(4);
-		   cardboard.innerHTML = jsonObj.Logs[0].Bags[i].cardboardTrashPercentage+"%";
+		   cardboard.innerHTML = jsonObj.Logs[num].Bags[i].cardboardTrashPercentage+"%";
 		   var plastic = row.insertCell(5);
-		   plastic.innerHTML = jsonObj.Logs[0].Bags[i].plasticTrashPercentage+"%";
+		   plastic.innerHTML = jsonObj.Logs[num].Bags[i].plasticTrashPercentage+"%";
 		   var glass = row.insertCell(6);
-		   glass.innerHTML = jsonObj.Logs[0].Bags[i].glassTrashPercentage+"%";
+		   glass.innerHTML = jsonObj.Logs[num].Bags[i].glassTrashPercentage+"%";
 		   var cans = row.insertCell(7);
-		   cans.innerHTML = jsonObj.Logs[0].Bags[i].cansTrashPercentage+"%";
+		   cans.innerHTML = jsonObj.Logs[num].Bags[i].cansTrashPercentage+"%";
 	   }
     }
   }
@@ -158,7 +160,10 @@
  function processNum()
   {
     var parameters = location.search.substring(1).split("=");
-	return parseInt(paramters[1]);
+	//alert("Parameters : "+parameters[1]);
+	var num = parseInt(parameters[1]);
+	//alert("Num = "+num);
+	return num;
   }
  </script>
 </body>
