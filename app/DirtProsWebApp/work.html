@@ -103,6 +103,9 @@
 <script src="assets/js/superfish.js" type="text/javascript"></script> 
 <script src="assets/js/custom.js" type="text/javascript"></script>
 <script language="javascript">
+
+var list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
  function getRows()
  {
    var xmlhttp = new XMLHttpRequest();
@@ -112,6 +115,7 @@
     {
        jsonObj = JSON.parse(xmlhttp.responseText);
 	   var table = document.getElementById("logsTable");
+	   
 	   for (var i = 0; i<jsonObj.Logs.length; i++)
 	   {
 	       var row = table.insertRow(i+1);
@@ -129,9 +133,11 @@
 		   button.type = "button";
 		   button.className = "btn btn-success btn-block";
 		   button.innerHTML = "<i class='icon-eye-open icon-white'></i>&nbsp&nbsp;View";
-		   button.onClick = "window.location.href='work2.html'";
+		   //alert("Index = "+list[i]);
+		   var curr = i;
+		  // alert("curr = "+i);
+		   button.onclick = function(){window.location.href = "work2.html?num="+list[curr]+""};
 		   buttonRow.appendChild(button);
-		   
 	   }
     }
   }
@@ -140,9 +146,9 @@
  
  }
  
-function nextpage(){
+/*function nextpage(){
 	window.location.href = "work2.html?num="+0+"";
-}
+}*/
  </script>
 </body>
 </html>
